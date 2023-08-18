@@ -1,6 +1,10 @@
-<%= image_tag @movie.poster_url, width: 700 %>
-<h2><%= @movie.title %></h2>
-<p><%= @movie.overview %></p>
-<p><%= @movie.rating %></p>
-
-<%= link_to "Back to movies", movies_path %>
+<div class="d-flex justify-content-center">
+  <div class="card mb-3 card-details bg-dark">
+    <%= image_tag @movie.poster_url %>
+    <div class="card-body">
+      <h5 class="card-title"><%= @movie.title %></h5>
+      <p class="card-text"><strong>Overview:</strong> <%= @movie.overview %></p>
+      <p class="card-text"><i class="fa-solid fa-star" style="color: #ffffff;"></i> Rating: <strong><%= @movie.rating %></strong></p>
+    </div>
+  </div>
+</div>

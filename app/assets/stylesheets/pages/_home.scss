@@ -2,7 +2,7 @@
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 2rem;
+  grid-gap: 3rem;
 }
 
 .title {
@@ -12,6 +12,35 @@
   text-shadow: 2px 2px 8px rgb(0, 0, 0);
 }
 
+label {
+  font-family: 'Jost', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: white;
+  font-size: 1.5rem;
+  text-shadow: 2px 2px 8px rgb(0, 0, 0);
+}
+
+input {
+  box-shadow: 2px 2px 4px rgb(0, 0, 0);
+  transition: 0.8s;
+
+  &:hover {
+    box-shadow: 2px 2px 4px #fc6f6f;
+    transition: 0.8s;
+  }
+}
+
 body {
   background-color: #6b6b6b;
+}
+
+.grid-list-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 3rem;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Minimum height of viewport */
 }

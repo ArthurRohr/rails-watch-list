@@ -1,17 +1,15 @@
-<h1>Lists</h1>
+<h1 class="my-4 text-center title">My lists</h1>
 
-<ul>
+<div class="grid-list-container">
   <% @lists.each do |list| %>
-    <li>
-      <%= list.name %>
-      <%= link_to "See details", list_path(list) %>
-      <%= link_to "Delete",
+    <div class="card text-bg-dark rounded list-container d-flex justify-content-center align-items-center">
+      <p><%= list.name %></p>
+      <%= link_to "List details", list_path(list), class: "btn btn-light" %>
+      <%= link_to "",
         list_path(list),
-        data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}
+        data: {turbo_method: :delete, turbo_confirm: "Are you sure?"},
+        class: "fa-solid fa-trash-can delete"
       %>
-    </li>
+    </div>
   <% end %>
-</ul>
-
-<%= link_to "Create a list", new_list_path %>
-<%= link_to "Back to movies", movies_path %>
+</div>

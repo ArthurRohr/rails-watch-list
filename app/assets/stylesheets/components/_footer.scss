@@ -1,0 +1,26 @@
+.box-shadow-footer {
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.8);
+  transition: 0.8s;
+
+  &:hover {
+    box-shadow: 0 -4px 8px #fc6f6f;
+    transition: 0.8s;
+  }
+}
+
+footer {
+  height: 150px;
+  width: 100%;
+
+  i{
+    margin: 0 7rem;
+    font-size: 2rem;
+    color: white;
+    transition: 0.8s;
+
+    &:hover {
+      color: #fc6f6f;
+      transition: 0.8s;
+    }
+  }
+}

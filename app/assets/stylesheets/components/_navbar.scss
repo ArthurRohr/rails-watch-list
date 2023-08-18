@@ -13,12 +13,12 @@
   }
 }
 
-.box-shadow {
-  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8);
+.box-shadow-navbar {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
   transition: 0.8s;
 
   &:hover {
-    box-shadow: 4px 4px 8px #fc6f6f;
+    box-shadow: 0 4px 8px #fc6f6f;
     transition: 0.8s;
   }
 }
