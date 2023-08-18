@@ -1,0 +1,25 @@
+.image-container {
+  width: 100%; /* You can set the width of the container */
+  height: 20rem; /* You can set the height of the container */
+  overflow: hidden; /* Hide any overflow of the image */
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8);
+  transition: 0.8s;
+
+  img {
+    width: 100%; /* Make the image take the full width of the container */
+    height: 100%; /* Make the image take the full height of the container */
+    opacity: 0.5;
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+  }
+
+  h5 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    font-family: 'Jost', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+
+  &:hover {
+    box-shadow: 4px 4px 8px #fc6f6f;
+    transition: 0.8s;
+    transform: scale(1.1);
+  }
+}

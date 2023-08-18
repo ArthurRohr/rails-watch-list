@@ -1,0 +1,17 @@
+<h1>Lists</h1>
+
+<ul>
+  <% @lists.each do |list| %>
+    <li>
+      <%= list.name %>
+      <%= link_to "See details", list_path(list) %>
+      <%= link_to "Delete",
+        list_path(list),
+        data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}
+      %>
+    </li>
+  <% end %>
+</ul>
+
+<%= link_to "Create a list", new_list_path %>
+<%= link_to "Back to movies", movies_path %>

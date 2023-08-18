@@ -1,0 +1,13 @@
+<h1 class="my-4 text-center title">Movies</h1>
+
+<div class="grid-container">
+  <% @movies.each do |movie| %>
+    <div class="card text-bg-dark rounded image-container">
+      <%= image_tag movie.poster_url, class: "card-img img-fluid" %>
+      <div class="card-img-overlay">
+        <h5 class="card-title fw-semibold fs-4"><%= movie.title %></h5>
+        <%= link_to "Movie details", movie_path(movie), class: "card-link btn btn-light" %>
+      </div>
+    </div>
+  <% end %>
+</div>
